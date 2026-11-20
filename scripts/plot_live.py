@@ -79,8 +79,11 @@ def main() -> None:
     n_ok = sum(1 for _, c, o in calls
                if c and o not in (None, "")
                and (c == "UP") == (str(o) == "1"))
-    fig.text(0.99, 0.01, f"gated calls: {n_ok}/{n_call} right",
-             color="#8b949e", ha="right", fontsize=9)
+    if n_call:
+        footer = f"gated calls: {n_ok}/{n_call} right"
+    else:
+        footer = "no gated calls this run (quiet tape, model stayed silent)"
+    fig.text(0.99, 0.01, footer, color="#8b949e", ha="right", fontsize=9)
     fig.tight_layout()
     fig.savefig(out, dpi=130, facecolor=fig.get_facecolor())
     print("wrote", out)
