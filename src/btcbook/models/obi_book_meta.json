@@ -1,0 +1,103 @@
+{
+  "features": [
+    "obi",
+    "obi_ma3",
+    "obi_ma10",
+    "obi_ma60",
+    "micro_dev",
+    "micro_dev_ma3",
+    "micro_dev_ma10",
+    "rel_spread",
+    "spread_ma60",
+    "spread_ratio",
+    "bidq",
+    "askq",
+    "qty_ratio",
+    "qty_total",
+    "obi_d1",
+    "md_d1",
+    "obi_d2",
+    "md_d2",
+    "obi_d3",
+    "md_d3",
+    "obi_d5",
+    "md_d5",
+    "obi_d10",
+    "md_d10",
+    "obi_d30",
+    "md_d30",
+    "obi_std30",
+    "obi_z",
+    "spread_d1",
+    "qty_ratio_d1",
+    "qty_ratio_d5",
+    "ofi_sum1",
+    "ofi_mean1",
+    "ofi_sum2",
+    "ofi_mean2",
+    "ofi_sum3",
+    "ofi_mean3",
+    "ofi_sum5",
+    "ofi_mean5",
+    "ofi_sum10",
+    "ofi_mean10",
+    "ofi_sum30",
+    "ofi_mean30",
+    "ofi_sum60",
+    "ofi_mean60",
+    "ofi_sum300",
+    "ofi_mean300",
+    "ofi_std30",
+    "ofi_z30",
+    "ofi_r3_30",
+    "ofi_r10_60",
+    "ofi_r30_300",
+    "ofi_agree",
+    "snaps",
+    "snaps_ma10",
+    "snaps_ma60",
+    "snaps_ratio",
+    "snaps_d1"
+  ],
+  "horizon": 10,
+  "auc": 0.7678,
+  "accuracy": 0.7035,
+  "gates": {
+    "0.1": {
+      "accuracy": 0.7621,
+      "share": 0.7041
+    },
+    "0.15": {
+      "accuracy": 0.7892,
+      "share": 0.5535
+    },
+    "0.2": {
+      "accuracy": 0.8173,
+      "share": 0.4049
+    },
+    "0.25": {
+      "accuracy": 0.8466,
+      "share": 0.2627
+    },
+    "0.3": {
+      "accuracy": 0.8748,
+      "share": 0.1373
+    },
+    "0.35": {
+      "accuracy": 0.8947,
+      "share": 0.0486
+    }
+  },
+  "walkforward_aucs": [
+    0.7896,
+    0.7688,
+    0.7659,
+    0.7587
+  ],
+  "trained_at": "2026-10-27T02:12:19Z",
+  "train_window": [
+    1711584000,
+    1711843199
+  ],
+  "n_train": 185940
+}
